@@ -1,0 +1,326 @@
+html {
+	height: 100%;
+	background-image: url("../images/godzilla.png");
+	background-size:cover;
+}
+
+body {
+	min-height: 100%;
+	display:flex;
+	flex-direction: column;
+	margin-left:0;
+	margin-bottom:0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*Header CSS*/
+header {
+	width: 960px;
+}
+
+header .name {
+	display:inline-block;
+	float:left;
+}
+
+.name h1 {
+	font-family:'Trade Winds', cursive;
+}
+
+nav {
+	display: inline-block;
+	float:right;
+}
+
+ul {
+	list-style:none;
+}
+
+nav li {
+	float:left;
+}
+
+#aboutLink {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+#portLink {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+nav li a {
+	display: block;
+	text-align:center;
+	text-decoration: none;
+	padding: 10px 12px;
+	font-family:'Trade Winds', cursive
+}
+
+nav li a:link {
+	color: white;
+	background-color: black;
+}
+
+nav li a:visited {
+	color: lightblue;
+	background-color: black;
+}
+
+nav li a:hover {
+	background-color:dimgray;
+	color:white;
+}
+
+.active {
+	background-color:black;
+	color: white;
+}
+/*Main Content CSS*/
+
+.container {
+	height: 100%;
+	width: 960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.left-container {
+	width: 650px;
+	display:block;
+	float:left;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.left-container p {
+	margin-top:2em;
+	margin-right: 1em;
+}
+
+.left-container h2 {
+	padding-left:3%;
+	border-bottom: 1px solid dimgray;
+	padding-bottom: 10px;
+	font-family: 'Trade Winds', cursive;
+}
+
+.imgContaier {
+	position: relative;
+	width:100%;
+}
+
+.imgContainer a {
+	text-decoration: none;
+}
+
+.port1 {
+	float:left;
+	margin-left:5px;
+	padding:2px;
+	border:2px solid black;
+	border-radius: 5px;
+}
+
+.port1:hover {
+	background-color:lightblue;
+}
+
+.imgContainer #portLink1 {
+	position: relative;
+	top:117px;
+	left:-229px;
+}
+
+#portLink1 span {
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	font-family:'Trade Winds', cursive;
+}
+
+.port2 {
+	float:right;
+	margin-top:2em;
+	margin-right:3px;
+	padding:2px;
+	border:2px solid black;
+	border-radius: 5px;
+}
+
+.port2:hover {
+	background-color:lightblue;
+}
+
+.imgContainer #portLink2 {
+	position: relative;
+	float:right;
+	bottom: 65px;
+	left: 210px;
+}
+
+#portLink2 span {
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	font-family:'Trade Winds', cursive;
+	border-radius:3px;
+	letter-spacing:1px;
+}
+
+.port3 {
+	float:left;
+	margin-top:3em;
+	margin-left:5px;
+	padding:2px;
+	border:2px solid black;
+	border-radius: 5px;
+}
+
+.port3:hover {
+	background-color:lightblue;
+}
+
+.imgContainer #portLink3 {
+	position:relative;
+	top:200px;
+	left:-196px;
+}
+
+#portLink3  span {
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	font-family:'Trade Winds', cursive;
+}
+
+.port4 {
+	float:right;
+	margin-right:40px;
+	margin-bottom:40px;
+	padding:2px;
+	border:2px solid black;
+	border-radius:5px;
+}
+
+.port4:hover {
+	background-color:lightblue;
+}
+
+.imgContainer #portLink4 {
+	float:right;
+	position: relative;
+	bottom: 30px;
+	left: 210px;
+}
+
+#portLink4 span {
+	background-color: rgba(0,0,0,0.7);
+	color: white;
+	font-family:'Trade Winds', cursive;
+}
+
+form{
+	padding-left: 1em;
+}
+
+form h4 {
+	margin-bottom:0;
+}
+
+input[type=text] {
+	border:1px solid black;
+}
+
+textarea {
+	border:1px solid black;
+}
+
+#me {
+	float:left;
+	margin:1em;
+	border:1px solid black;
+	padding: 3px;
+	border-radius: 3px;
+
+}
+
+.right-container {
+	width: 270px;
+	display:block;
+	float:right;
+	text-align:center;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding-bottom: 1em;
+}
+
+.right-container h3{
+	border-bottom: 1px solid gray;
+	padding-bottom: 1em;
+	font-family: 'Trade Winds', cursive;
+}
+
+/*Footer CSS*/
+footer {
+	width: 100%;
+	text-align: center;
+	margin-top: auto;
+	padding: 1em;
+	background-color: black;
+	color: white;
+	border-top: 3px solid dimgray;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 980px) {
+	.container {
+		width: 760px;
+	}
+
+	header {
+		width:760px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 639px;
+	}
+
+	header {
+		width: 639px;
+	}
+
+	.right-container {
+		float:left;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	header {
+		
+		width:580px;
+	}
+
+	.container {
+		width: 580px;
+	}
+
+	.left-container {
+		width: 580px;
+	}
+
+	.right-container {
+		float:left;
+	}
+
+	footer {
+		width:580px;
+	}
+}
